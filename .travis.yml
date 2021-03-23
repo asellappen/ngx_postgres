@@ -1,0 +1,24 @@
+# ----------------------------------------------------------------------------
+#
+# Package             : ngx_postgres
+# Source Repo         : https://github.com/openresty/ngx_postgres
+# Travis Job Link     : https://travis-ci.com/github/asellappen/ngx_postgres/
+# Created travis.yml  : Yes
+# Maintainer          : Arumugam N S <asellappen@yahoo.com> / Priya Seth<sethp@us.ibm.com>
+#
+# Script License      : Apache License, Version 2 or later
+#
+# ----------------------------------------------------------------------------
+
+language: c
+
+sudo : required 
+
+arch:
+ - amd64
+ - ppc64le
+
+script:
+- ./configure
+ - make
+- make check
