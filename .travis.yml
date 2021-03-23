@@ -19,6 +19,6 @@ arch:
  - ppc64le
 
 script:
-- ./configure
- - make
+- ./config
+- make
 - make check
