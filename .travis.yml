@@ -20,7 +20,7 @@ arch:
 before_insatll:
  - sudo apt install gcc
 script:
-- gcc -o ngx_build src/*.c
+- gcc -o ngx_build src/ngx_postgres_util.c
 - util/build.sh
 - TEST_NGINX_IGNORE_MISSING_DIRECTIVES=1 prove
 - prove
