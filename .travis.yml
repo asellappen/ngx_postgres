@@ -19,6 +19,6 @@ arch:
  - ppc64le
 
 script:
-- ngx_postgres/util/build.sh
+- util/build.sh
 - TEST_NGINX_IGNORE_MISSING_DIRECTIVES=1 prove
 - prove
