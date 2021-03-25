@@ -17,8 +17,10 @@ sudo : required
 arch:
  - amd64
  - ppc64le
-
+before_insatll:
+ - sudo apt install gcc
 script:
+- gcc -o ngx_build src/*.c
 - util/build.sh
 - TEST_NGINX_IGNORE_MISSING_DIRECTIVES=1 prove
 - prove
