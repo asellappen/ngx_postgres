@@ -78,6 +78,7 @@ install:
   - git clone https://github.com/calio/form-input-nginx-module.git ../form-input-nginx-module
   - git clone https://github.com/openresty/ngx_postgres.git ../postgres-nginx-module
   - git clone https://github.com/openresty/openresty.git ../ngx_openresty
+  - sudo apt-get install nginx
 
 before_script:
   #- mysql -uroot -e 'create database ngx_test; grant all on ngx_test.* to "ngx_test"@"%" identified by "ngx_test"; flush privileges;'
